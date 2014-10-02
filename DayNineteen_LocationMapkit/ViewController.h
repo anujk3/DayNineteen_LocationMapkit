@@ -17,6 +17,8 @@
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @property (nonatomic, retain) MyLocationController *locationController;
+- (IBAction)tappedAdd:(id)sender;
+- (IBAction)tappedRemove:(id)sender;
 
 @end
 

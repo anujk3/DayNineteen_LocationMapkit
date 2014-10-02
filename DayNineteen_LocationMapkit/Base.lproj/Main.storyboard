@@ -39,16 +39,22 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1v-AV-Bcm">
-                                <rect key="frame" x="538" y="52" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="554" y="52" width="30" height="30"/>
+                                <state key="normal" title="Add">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="tappedAdd:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5ks-JQ-Jgh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KvW-JE-vef">
-                                <rect key="frame" x="538" y="116" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="527" y="116" width="57" height="30"/>
+                                <state key="normal" title="Remove">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="tappedRemove:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3Yq-gY-nvd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
