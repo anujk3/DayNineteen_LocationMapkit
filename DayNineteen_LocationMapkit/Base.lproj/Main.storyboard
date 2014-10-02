@@ -38,18 +38,34 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1v-AV-Bcm">
+                                <rect key="frame" x="538" y="52" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KvW-JE-vef">
+                                <rect key="frame" x="538" y="116" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="eir-H1-OrZ" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="4Zw-qF-1yQ"/>
                             <constraint firstItem="3dl-lm-81S" firstAttribute="leading" secondItem="Ood-pQ-M27" secondAttribute="leading" id="8zg-BH-07h"/>
+                            <constraint firstItem="L1v-AV-Bcm" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="EXY-Eh-8hI"/>
                             <constraint firstItem="Ood-pQ-M27" firstAttribute="top" secondItem="3dl-lm-81S" secondAttribute="bottom" constant="43" id="LRt-eK-ucP"/>
                             <constraint firstItem="3dl-lm-81S" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="bkk-dq-fX0"/>
                             <constraint firstItem="3dl-lm-81S" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="36" id="cff-B8-S2W"/>
                             <constraint firstItem="eir-H1-OrZ" firstAttribute="top" secondItem="Ood-pQ-M27" secondAttribute="bottom" constant="47" id="eq2-az-0Nz"/>
                             <constraint firstAttribute="bottom" secondItem="eir-H1-OrZ" secondAttribute="bottom" constant="20" symbolic="YES" id="jY5-vY-1hl"/>
                             <constraint firstItem="Ood-pQ-M27" firstAttribute="leading" secondItem="eir-H1-OrZ" secondAttribute="leading" id="lSb-px-e4T"/>
+                            <constraint firstItem="L1v-AV-Bcm" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="32" id="mNW-1c-bau"/>
                             <constraint firstItem="Ood-pQ-M27" firstAttribute="trailing" secondItem="3dl-lm-81S" secondAttribute="trailing" id="oW3-wr-ASs"/>
+                            <constraint firstItem="KvW-JE-vef" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="96" id="rGA-7M-pWa"/>
+                            <constraint firstItem="KvW-JE-vef" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="scv-Hh-iLK"/>
                         </constraints>
                     </view>
                     <connections>

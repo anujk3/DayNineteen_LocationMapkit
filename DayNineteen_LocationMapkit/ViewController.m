@@ -32,16 +32,18 @@
     // Dispose of any resources that can be recreated.
 }
 
-//- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation NS_AVAILABLE(10_9, 4_0){
-//    self.lblLatitude.text = [NSString stringWithFormat:@"Latitude: %f", [userLocation coordinate].latitude];
-//    self.lblLongitude.text = [NSString stringWithFormat:@"Longitude: %f", [userLocation coordinate].longitude];
-//}
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation NS_AVAILABLE(10_9, 4_0){
+    [self.locationController.locationManager startUpdatingLocation];
+
+}
 
 - (void)update:(CLLocation *)location{
     NSLog(@"Location %@", location);
     self.lblLatitude.text= [NSString stringWithFormat:@"Latitude: %f", [location coordinate].latitude];
     self.lblLongitude.text = [NSString stringWithFormat:@"Longitude: %f", [location coordinate].longitude];
+    [self.locationController.locationManager stopUpdatingLocation];
 }
+
 - (void)locationError: (NSError *)error{
     self.lblLatitude.text = [error description];
     self.lblLongitude.text = nil;
