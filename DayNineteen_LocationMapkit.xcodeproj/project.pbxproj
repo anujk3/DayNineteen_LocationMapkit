@@ -14,6 +14,8 @@
 		6555643219DD59D60070D897 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6555643119DD59D60070D897 /* Images.xcassets */; };
 		6555643519DD59D60070D897 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6555643319DD59D60070D897 /* LaunchScreen.xib */; };
 		6555644119DD59D60070D897 /* DayNineteen_LocationMapkitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6555644019DD59D60070D897 /* DayNineteen_LocationMapkitTests.m */; };
+		6555644B19DD5A470070D897 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6555644A19DD5A470070D897 /* MapKit.framework */; };
+		6555644E19DD5A470070D897 /* MyLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6555644D19DD5A470070D897 /* MyLocationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		6555643A19DD59D60070D897 /* DayNineteen_LocationMapkitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DayNineteen_LocationMapkitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6555643F19DD59D60070D897 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6555644019DD59D60070D897 /* DayNineteen_LocationMapkitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DayNineteen_LocationMapkitTests.m; sourceTree = "<group>"; };
+		6555644A19DD5A470070D897 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6555644C19DD5A470070D897 /* MyLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLocationController.h; sourceTree = "<group>"; };
+		6555644D19DD5A470070D897 /* MyLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLocationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6555644B19DD5A470070D897 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,7 @@
 		6555641819DD59D60070D897 = {
 			isa = PBXGroup;
 			children = (
+				6555644A19DD5A470070D897 /* MapKit.framework */,
 				6555642319DD59D60070D897 /* DayNineteen_LocationMapkit */,
 				6555643D19DD59D60070D897 /* DayNineteen_LocationMapkitTests */,
 				6555642219DD59D60070D897 /* Products */,
@@ -89,6 +96,8 @@
 				6555643119DD59D60070D897 /* Images.xcassets */,
 				6555643319DD59D60070D897 /* LaunchScreen.xib */,
 				6555642419DD59D60070D897 /* Supporting Files */,
+				6555644C19DD5A470070D897 /* MyLocationController.h */,
+				6555644D19DD5A470070D897 /* MyLocationController.m */,
 			);
 			path = DayNineteen_LocationMapkit;
 			sourceTree = "<group>";
@@ -219,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6555644E19DD5A470070D897 /* MyLocationController.m in Sources */,
 				6555642D19DD59D60070D897 /* ViewController.m in Sources */,
 				6555642A19DD59D60070D897 /* AppDelegate.m in Sources */,
 				6555642719DD59D60070D897 /* main.m in Sources */,

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,8 +16,47 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eir-H1-OrZ">
+                                <rect key="frame" x="16" y="188" width="568" height="392"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="z6o-A8-dRo"/>
+                                </connections>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dl-lm-81S">
+                                <rect key="frame" x="16" y="56" width="267" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="267" id="WhF-u4-mQ0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ood-pQ-M27">
+                                <rect key="frame" x="16" y="120" width="267" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eir-H1-OrZ" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="4Zw-qF-1yQ"/>
+                            <constraint firstItem="3dl-lm-81S" firstAttribute="leading" secondItem="Ood-pQ-M27" secondAttribute="leading" id="8zg-BH-07h"/>
+                            <constraint firstItem="Ood-pQ-M27" firstAttribute="top" secondItem="3dl-lm-81S" secondAttribute="bottom" constant="43" id="LRt-eK-ucP"/>
+                            <constraint firstItem="3dl-lm-81S" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="bkk-dq-fX0"/>
+                            <constraint firstItem="3dl-lm-81S" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="36" id="cff-B8-S2W"/>
+                            <constraint firstItem="eir-H1-OrZ" firstAttribute="top" secondItem="Ood-pQ-M27" secondAttribute="bottom" constant="47" id="eq2-az-0Nz"/>
+                            <constraint firstAttribute="bottom" secondItem="eir-H1-OrZ" secondAttribute="bottom" constant="20" symbolic="YES" id="jY5-vY-1hl"/>
+                            <constraint firstItem="Ood-pQ-M27" firstAttribute="leading" secondItem="eir-H1-OrZ" secondAttribute="leading" id="lSb-px-e4T"/>
+                            <constraint firstItem="Ood-pQ-M27" firstAttribute="trailing" secondItem="3dl-lm-81S" secondAttribute="trailing" id="oW3-wr-ASs"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblLatitude" destination="3dl-lm-81S" id="rBn-XA-CeU"/>
+                        <outlet property="lblLongitude" destination="Ood-pQ-M27" id="qKf-ok-5GZ"/>
+                        <outlet property="mapView" destination="eir-H1-OrZ" id="f0w-gC-2c0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
